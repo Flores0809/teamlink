@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Link | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #1e3a8a;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .hero button:hover {
+      background-color: #e0e7ff;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: center;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Team Link</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="create_game.html">Create Game</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Connect. Play. Grow.</h2>
+    <p>Welcome to <strong>Team Link</strong> — a digital community for athletes to connect, organize volleyball games, and build lasting friendships.</p>
+    <button onclick="window.location.href='games.html'">Find a Game</button>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>🏐 Schedule Matches</h3>
+      <p>Create and join volleyball games around your area with just a few clicks.</p>
+    </div>
+
+    <div class="feature">
+      <h3>👥 Build Your Team</h3>
+      <p>Connect with players, find teammates, and fill open slots for your games.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🏆 Earn Badges</h3>
+      <p>Be recognized for your participation, leadership, and sportsmanship.</p>
+    </div>
+
+    <div class="feature">
+      <h3>💬 Share Experiences</h3>
+      <p>Post updates, game highlights, and interact with the volleyball community.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Team Link | A Digital Platform for Athlete Socialization and Community Building</p>
+  </footer>
+</body>
+</html>
