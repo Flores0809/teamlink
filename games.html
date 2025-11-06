@@ -110,6 +110,7 @@
     }
 
     .game-card {
+      position: relative;
       background-color: #f9fafb;
       padding: 20px;
       border-radius: 12px;
@@ -117,7 +118,26 @@
       transition: transform 0.3s, box-shadow 0.3s;
       opacity: 0;
       animation: fadeUp 0.8s ease forwards;
+      overflow: hidden;
     }
+
+    .game-card img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 120px; /* increased from 70px */
+  height: 120px; /* increased from 70px */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 14px rgba(0,0,0,0.3);
+}
+
 
     .game-card:nth-child(1) { animation-delay: 0.2s; }
     .game-card:nth-child(2) { animation-delay: 0.4s; }
@@ -247,6 +267,7 @@
         <p><strong>Players Needed:</strong> 3</p>
         <p><strong>Organizer:</strong> Alex Cruz</p>
         <button>View Details</button>
+        <img src="https://scontent-mnl3-3.xx.fbcdn.net/v/t39.30808-6/486416059_1059279416244249_1738533528437656555_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE3Vry8SwTVbGuOh2fO6sDjoUFT8bw9ohmhQVPxvD2iGbkllBpozrSZsknCuIWK9tuztUhDXjkTrT9qfDYCIQ3S&_nc_ohc=v0XESqrCXfsQ7kNvwG5V2KC&_nc_oc=Adke7PnWnVHdkPUHeWXGLeTNkkEzBX9svuUDQtd1-TB1SDv7sXnp_cmAY66YJd-HLnI&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_gid=7xxbk4IJOuW5sUoGClx_yQ&oh=00_AfgdvCu0YqTdPfX_LCHv9nnKzZayyFh076M7psqkx3pOdA&oe=69124688" alt="Calamba Sports Complex">
       </div>
 
       <div class="game-card">
@@ -256,6 +277,7 @@
         <p><strong>Players Needed:</strong> 2</p>
         <p><strong>Organizer:</strong> Jamie Santos</p>
         <button>View Details</button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDx4VP-F--RlWIotAumfjIuEnp3P2fnHEdmw&s" alt="Letran Calamba Gym">
       </div>
 
       <div class="game-card">
@@ -265,6 +287,7 @@
         <p><strong>Players Needed:</strong> 1</p>
         <p><strong>Organizer:</strong> Ryan Lopez</p>
         <button>View Details</button>
+        <img src="https://www.saintbenilde.edu.ph/wp-content/uploads/photo-gallery/imported_from_media_libray/gym1-scaled.jpg?bwg=1589850727" alt="Sunday Match">
       </div>
 
       <div class="game-card">
@@ -274,6 +297,7 @@
         <p><strong>Players Needed:</strong> 4</p>
         <p><strong>Organizer:</strong> Bea Castillo</p>
         <button>View Details</button>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Bi%C3%B1an%2CLagunajf9306_06.JPG" alt="Binan Court Match">
       </div>
     </div>
 
